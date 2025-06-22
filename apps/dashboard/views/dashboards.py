@@ -7,7 +7,7 @@ def index(request):
 
 
 
-def card1(request):
+def chart1(request):
     labels = ["A", "B", "C", "E", "G", "N"]
     values = [120, 90, 150, 75, 120, 165]
 
@@ -83,4 +83,4 @@ def card1(request):
     )
 
     chart_div = to_html(fig, full_html=False, include_plotlyjs=False)
-    return render(request, 'dashboards/card1.html', {"chart_div": chart_div})
+    return render(request, 'dashboards/chart1.html', {"chart_div": chart_div})
