@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  Juan Peñate · Bar Chart 1
+{% endblock %}
+
+{% block head %}
+    <script src="{% static 'js/plotly/plotly.min.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+  <h1>Bar chart 1</h1>
+  <a href="{% url 'dashboard:dashboard' %}" class="sticky_link">Return to menu</a>
+
+{#  <div style="width: 50%; margin: auto;">#}
+  <div style="
+      background-color: rgba(34,34,34,0.6);
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  ">
+    {{ chart_div|safe }}
+  </div>
+{% endblock %}
