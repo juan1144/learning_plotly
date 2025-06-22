@@ -1,0 +1,21 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+    h1{
+        font-size: 8vh;
+    }
+
+    a:link {
+        font-size: 4vh;
+    }
+
+    .sticky_link {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 10px 15px;
+    }
+}

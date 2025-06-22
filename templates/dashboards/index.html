@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Juan Peñate · Menu
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <h1>Plotly Menu</h1>
+    <a href="{% url 'dashboard:card1' %}">Bar chart 1</a>
+{% endblock %}
